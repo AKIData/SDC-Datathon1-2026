@@ -1,4 +1,4 @@
-# 🍂 The Datathon Survival Manual: Project README
+# 🍂SDC Datathon AKI Data Process
 
 ### **Project Title:** Predicting Socio-Economic Impacts Post-Mobile Money Deployment
 ### **Author:** `AKI Data - Amani Koros, Karanei Kimutai, Ivan Mayabi`
@@ -6,7 +6,7 @@
 
 ---
 
-## 1. Executive Summary (Or: The Day the Math Fought Back)
+## 1. Executive Summary
 Welcome to the official post-mortem and operational blueprint for our predictive financial health engine. This project analyzes raw survey micro-data tracking Kenyan financial inclusion metrics (grounded in national data profiles like GeoPoll and FinAccess report patterns). 
 
 Our assignment seemed innocent: predict an individual's changing financial stability using **28 high-quality survey columns**. What followed was a dramatic, hard-fought architectural journey where our code underwent an extreme existential pivot—evolving from an utterly blind **13% $R^2$ regression model that used 111 noisy columns** to a highly optimized, beautifully structured **3-Class Balanced Classifier** pulling an honest **52% generalized accuracy** on completely untouched test data.
@@ -14,7 +14,7 @@ Our assignment seemed innocent: predict an individual's changing financial stabi
 ---
 
 ## 2. Tools & Stack Architecture
-Our technical pipeline was carefully engineered to balance predictive precision with our laptops' survival during heavy training loops:
+Our technical pipeline was carefully engineered:
 * **Data Wrangling & Pipeline Preservation:** `Pandas`
 * **The Early Contenders (The Traps):** Scikit-Learn's `RandomForestRegressor`.
 * **The Heavyweight Production Stack:** `LGBMClassifier` (LightGBM Native Boosting) and Scikit-Learn's `RandomForestClassifier`.
